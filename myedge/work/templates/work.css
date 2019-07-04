@@ -1,0 +1,11 @@
+nav>a {
+    padding: 0 10px;
+    border-right: 1px solid grey;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#social-media>a>img {
+    padding-right: 50px;
+}
