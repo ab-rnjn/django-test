@@ -2,246 +2,294 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../static/style.css">
-    <link rel="stylesheet" href="./work.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>LOTA</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0," />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="../../static/home.css" />
+  <link rel="stylesheet" href="../../static/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>NGO | Save The Children</title>
 </head>
 
-<body class="flex-v">
-    <div class="flex-h" style="height: 100px; align-items: center;" id="social-media">
-        <a href="https://upload.wikimedia.org" target="_blank" style="margin-left: auto;">
-            <img height="60" alt="Twitter icon" src="https://upload.wikimedia.org/wikipedia/fr/c/c8/Twitter_Bird.svg">
-        </a>
-        <a href="https://upload.wikimedia.org" target="_blank">
-            <img height="60" alt="Instagram icon"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/512px-Instagram_icon.png">
-        </a>
-        <a href="https://upload.wikimedia.org" target="_blank">
-            <img height="60" alt="massenger icon"
-                src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Facebook_Messenger_logo.svg">
-        </a>
+<body>
+  <div class="logobar">
+    <div class="flex-h" id="social-media">
+      <a href="https://upload.wikimedia.org" target="_blank" style="margin-left: auto;">
+        <img height="30" alt="Twitter icon" src="https://upload.wikimedia.org/wikipedia/fr/c/c8/Twitter_Bird.svg">
+      </a>
+      <a href="https://upload.wikimedia.org" target="_blank">
+        <img height="30" alt="Instagram icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/512px-Instagram_icon.png">
+      </a>
+      <a href="https://upload.wikimedia.org" target="_blank">
+        <img height="30" alt="messenger icon" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Facebook_Messenger_logo.svg">
+      </a>
     </div>
-    <nav class="flex-h" style="height: 40px; align-items: center; padding-left:100px; background: rgb(30, 110, 19);">
-        <a>HOME</a>
-        <a>ABOUT</a>
-        <a>EVENTS</a>
-        <a>NEWS</a>
-        <a>GALLERY</a>
-        <a>DONATE NOW</a>
-        <a>SHOP</a>
-        <a>SHORTCODES</a>
-        <a>CONTACT</a>
-    </nav>
-    <div style="height:600px; width:100%;background-image:url('../../static/lone-child.jpg');
-    background-size: cover;background-position: center;">
-        <div style="margin:160px 60px;">
-            <span
-                style="font-weight:bolder; font-size: 2.4rem;word-spacing:4px; color:white ; background-color:rgba(0,0,0,0.7); padding:4px 8px;">
-                SAVE A CHILD'S FUTURE
-            </span>
-            <pre style="margin:40px 0px; font-size: 1.2rem ; color:white;">
-A Donation Website for all types of Charity
-
-Websites with tons of useful HTML.Elements.
-            </pre>
-            <button
-                style="padding:10px 30px; font: 400 13.3333px Arial; color: white; background-color: rgb(32, 32, 32); border: none;">
-                READ MORE
-            </button>
-
+  </div>
+  <!-- sidebar -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Evenst</a>
+    <a href="#">Campaign</a>
+    <a href="#">Gallary</a>
+    <a href="#">Contact</a>
+  </div>
+  <div id="landing-page">
+    <div id="nav">
+      <div id="link-container">
+        <div id="color-home">HOME</div>
+        <div class="dropdown">
+            <button class="gallary-dropbtn"><a href="#about">ABOUT</a></button>
+            <div class="dropdown-content">
+              <a href="#">Mission</a>
+              <a href="#" data-offset="90">Vision</a>
+              <a href="#">History</a>
+            </div>
+          </div>
+        <div class="links"><a href="#">NEWS</a></div>
+        <div class="links"><a href="#events">UPCOMING-EVENTS</a></div>
+        <div class="dropdown">
+          <button class="gallary-dropbtn">GALLARY</button>
+          <div class="dropdown-content">
+            <a href="#galary">Photos</a>
+            <a href="#activity-video" data-offset="90">Videos</a>
+            <a href="#awards">Awards</a>
+          </div>
         </div>
-
-
+        <div class="links"> <a href="#donate" data-offset="90">CAMPAIGN</a></div>
+        <div class="links"><a href="#contact">CONTACT</a></div>
+      </div>
+      <div id="main" class="menu-container" onclick="openNav()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     </div>
-    <div style="padding:40px;" class="flex-h">
-        <div class="flex-1 card-blue flex-v">
-            <span style="font-size:16px; color:white;">BECOME A VOLUNTEER</span>
-            <div style="margin:20px 0px; ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </div>
-            <div class="flex-1"></div>
-            <button class="btn-blue">Join Us Now</button>
-        </div>
-        <div class="flex-1 card-blue flex-v">
-            <span style="font-size:16px; color:white;">ADOPT A CHILD </span>
-            <div style="margin:20px 0px; ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </div>
-            <div class="flex-1"></div>
-            <button class="btn-blue">Join Us Now</button>
-        </div>
-        <div class="flex-1 card-blue">
-            <span style="font-size:16px; color:white;">GET INVOLVED</span>
-            <div style="margin:20px 0px; ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </div>
-            <div class="flex-1"></div>
-            <button class="btn-blue">Join Us Now</button>
-        </div>
+    <div class="img-slider">
+      <img class="mySlides" src="../../static/home-banner.jpg" width="100%">
+      <img class="mySlides" src="../../static/bg-1.jpg">
+      <img class="mySlides" src="../../static/bg-2.jpg">
+      <img class="mySlides" src="../../static/bg-3.jpg">
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+      </div>
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
-    <div class="flex-h" style="margin: 30px 20px;">
-        <div style="margin:20px; padding-left:60px;" class="flex-v flex-1">
-            <p style="font-size: 16px; font-weight: bolder;">Welcome To <span style="color:tomato;">Khidmat</span>
-                Foundation</p>
-            <p>We help Poor children to get their life better.</p>
-            <p style="line-height: 24px; margin-bottom:18px;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupta
+    <div class="text-container">
+      <h1 id="h1">save a child's future</h1>
+      <p id="p1" class="p">A Donation Website for all types of Charity</p>
+      <p class="p">Websites with tons of useful HTML.Elements.</p>
+      <button id="btn-readmore">read more</button>
+    </div>
+  </div>
+  <div class="page2">
+    <div id="activity" class="activity-containers">
+      <div id="one" class="container">
+        <h2>become a volunteer</h2>
+        <button id="btn1" class="btns">Join Us Now</button>
+      </div>
+      <div id="two" class="container">
+        <h2>adopt a child</h2>
+        <button id="btn2" class="btns">Contact Us</button>
+      </div>
+      <div id="three" class="container">
+        <h2>get involved</h2>
+        <button id="btn3" class="btns">Donate Us</button>
+      </div>
+    </div>
+    <div class="video-text-con">
+      <div id="activity-text" class="video">
+        <h3>welcome to the khidmat foundation</h3>
+        <button id="btn">Join Us Now</button>
+      </div>
+      <div id="activity-video" class="video">
+        <video width="400" controls>
+          <source src="../../static/mov_bbb.mp4" type="video/mp4" />
+          <source src="../../static/mov_bbb.ogg" type="video/ogg" />
+        </video>
+      </div>
+    </div>
+  </div>
+  <div class="compaign-container-page">
+    <div id="compaign-text-co">
+      <p id="p1"><b>featured <span>campaign</span></b></p>
+      <p id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. it voluptatum atque nobis sint praesentium
+        provident
+        ad.Molestias at modi nulla itaque unde consequuntur sunt, non odit! Ipsam!</p>
+    </div>
+    <div id="donate" class="features-container">
+      <div class="features">
+        <div class="img">
+          <img src="../../static/home-banner.jpg" alt="child" style="width: 100%" height="220vh" width="100%">
+          <div class="text">
+            <h3>We encourage girls education</h3>
+            <p class="p1">Lorem, ipsum dolor sit amet repellat velit dolorum ipsamhic quo quam
+              laboriosam culpa...
             </p>
-            <button style="padding:8px 16px; color: white;width: fit-content; font-weight: bolder; border:none;
-               background-image: linear-gradient(red, rgb(255, 153, 0)); border-radius: 500px;">JOIN US NOW</button>
+            <p class="donate">donate now</p>
+          </div>
         </div>
-        <div class="flex-1">
-            <video width="90%" controls>
-                <source src="../../static/mov_bbb.mp4" />
-            </video>
+      </div>
+      <div class="features">
+        <div class="img">
+          <img src="../../static/bg-2.jpg" alt="child" style="width: 100%" height="220vh" width="100%">
+          <div class="text">
+            <h3>Children to get their home</h3>
+            <p class="p1">Lorem, ipsum dolor sit amet repellat velit dolorum ipsamhic quo quam
+              laboriosam culpa......more now
+            </p>
+            <p class="donate">donate now</p>
+          </div>
         </div>
+      </div>
+      <div class="features">
+        <div class="img">
+          <img src="../../static/bg-1.jpg" alt="child" style="width: 100%" height="220vh" width="100%">
+          <div class="text">
+            <h3>The people to help themselves </h3>
+            <p class="p1">Lorem, ipsum dolor sit amet repellat velit dolorum ipsamhic jagle quo quam
+              laboriosam culpa.....
+            </p>
+            <p class="donate">donate now</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div style="text-align: center; margin-top: 20px; font-weight: bolder; font-size:18px;">
-        FEATURED <span style="color:tomato">CAMPAIGN</span>
+  </div>
+  <div class="event-page">
+    <div id="events">
+      <p>Upcoming<span>Events</span></p>
     </div>
-    <div style=" padding:20px;text-align: center;">
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.
+    <div class="upcoming-events">
+      <div class="event">
+        <div class="event-img">
+          <img src="../../static/home-banner.jpg" alt="child" style="width: 100%" height="175px" width="100%">
+          <h4>Helping the church to serve others</h4>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event-img">
+          <img src="../../static/bg-1.jpg" alt="child" style="width: 100%" height="175px" width="100%">
+          <h4>Helping the church to serve others </h4>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event-img">
+          <img src="../../static/bg-4.jpg" alt="child" style="width: 100%" height="175px" width="100%">
+          <h4>Helping the church to serve others</h4>
+        </div>
+      </div>
+      <div class="event">
+        <div class="event-img">
+          <img src="../../static/bg-3.jpg" alt="child" style="width: 100%" height="175px" width="100%">
+          <h4>The people to help themselves</h4>
+        </div>
+      </div>
     </div>
-    <div id="demo" class="carousel slide" data-ride="carousel">
-
-        <!-- Indicators -->
-        <!-- <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-        </ul> -->
-
-        <!-- The slideshow -->
-        <div class="container carousel-inner no-padding">
-            <div class="carousel-item active">
-                <div class="col-xs-4 col-sm-4 col-md-4 card-carousel">
-                    <img
-                        src="../../static/slider1.jpg">
-                    <div> featured campaign</div>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 card-carousel">
-                    <img
-                        src="../../static/slider2.jpg">
-                    <div> featured campaign</div>
-
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 card-carousel">
-                    <img
-                        src="../../static/slider3.jpg">
-                    <div> featured campaign</div>
-
-                </div>
-
-            </div>
-            <div class="carousel-item">
-                <div class="col-xs-4 col-sm-4 col-md-4 card-carousel">
-                    <img
-                        src="../../static/slider4.jpg">
-                    <div> featured campaign</div>
-
-                </div>
-                <!--
-                <div class="col-xs-4 col-sm-4 col-md-4 card-carousel">
-                    <img
-                        src="../../static/slider2.jpg">
-                    <div>featured campaign</div>
-
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 card-carousel">
-                    <img
-                        src="../../static/slider3.jpg">
-                    <div> featured campaign</div>
-
-                </div>
-            -->
-
-            </div>
-            <!--
-            <div class="carousel-item">
-                <div class="col-xs-4 col-sm-4 col-md-4 card-carousel">
-                    <img
-                        src="https://www.gstatic.com/webp/gallery/4.jpg">
-                    <div> lota gareeb</div>
-
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 card-carousel">
-                    <img
-                        src="https://www.gstatic.com/webp/gallery/4.jpg">
-                    <div> lota gareeb</div>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 card-carousel">
-                    <img
-                        src="https://www.gstatic.com/webp/gallery/4.jpg">
-                    <div> lota gareeb</div>
-                </div>
-            </div>
-        -->
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
+  </div>
+  <div class="galary-page">
+    <div id="galary">
+      <p>Our<span>Gallary</span></p>
     </div>
-    <div style="text-align: center; font-size: 20px;">
-        Upcoming <span style="color:rgb(29, 238, 29)">Events</span>
+    <div class="our-galary">
+      <div class="galary">
+        <div class="galary-img">
+          <img src="../../static/bg-1.jpg" alt="_child" style="width: 100%" height="160px" width="100%">
+          <h4>Helping church</h4>
+        </div>
+      </div>
+      <div class="galary">
+        <div class="galary-img">
+          <img src="./../static/home-banner.jpg" alt="_child" style="width: 100%" height="160px" width="100%">
+          <h4>Help serve others </h4>
+        </div>
+      </div>
+      <div class="galary">
+        <div class="galary-img">
+          <img src="../../static/bg-2.jpg" alt="_child" style="width: 100%" height="160px" width="100%">
+          <h4>Helping the church</h4>
+        </div>
+      </div>
+      <div class="galary">
+        <div class="galary-img">
+          <img src="../../static/bg-4.jpg" alt="_child" style="width: 100%" height="160px" width="100%">
+          <h4>The people to help </h4>
+        </div>
+      </div>
     </div>
-    <div class="flex-h" style="padding:20px 100px">
-        <div class="flex-1 flex-v events-card">
-            <img width="100%"
-                src="https://www.gstatic.com/webp/gallery/4.jpg">
-            <div class="flex-v">
-                <span>Helping the church to save others </span>
-                <button>Get Ticket</button>
-            </div>
-        </div>
-        <div class="flex-1 flex-v events-card">
-            <img width="100%"
-                src="https://www.gstatic.com/webp/gallery/4.jpg">
-            <div class="flex-v">
-                <span>Helping the church to save others </span>
-                <div class="flex-h">
-                    <i class="material-icons">event</i>
-                    <i class="material-icons" style="margin-left: auto;">location_on</i>
-                </div>
-                <button>Get Ticket</button>
-            </div>
-        </div>
-        <div class="flex-1 flex-v events-card">
-            <img width="100%"
-                src="https://www.gstatic.com/webp/gallery/4.jpg">
-            <div class="flex-v">
-                <span>Helping the church to save others </span>
-                <button>Get Ticket</button>
-            </div>
-        </div>
-        <div class="flex-1 flex-v events-card">
-            <img width="100%"
-                src="https://www.gstatic.com/webp/gallery/4.jpg">
-            <div class="flex-v">
-                <span>Helping the church to save others </span>
-                <button>Get Ticket</button>
-            </div>
-        </div>
+  </div>
+  <div id="contact">
+    <div class="where-text">
+      <h2>Where Find Us</h2>
+      <p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns
+        stack
+        on
+        top of each other instead of next to each other.</p>
     </div>
-
-
+    <div class="contactAddress-container">
+      <div class="contact-container">
+        <form action="/home.html">
+          <div class="row">
+            <div class="col-1">
+              <label for="fname">Full Name</label>
+            </div>
+            <div class="col-2">
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <label for="lname">Email Id</label>
+            </div>
+            <div class="col-2">
+              <input type="email" id="lname" name="Email Id" placeholder="your email id..." required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <label for="subject">Message</label>
+            </div>
+            <div class="col-2">
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit your message">
+          </div>
+        </form>
+      </div>
+      <div id="addressContainer">
+        <h3>How You Can Reach <br> Us ?</h3>
+        <p>232C, M3, Lorem ipsum dolor sit, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+          enim!,Lorem
+          ipsum dolor sit amet., Bhopal, MP</p>
+        <button>Know More</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div id="footerContainer">
+      <img src="../../static/instagram.png" alt="" height="100px">
+      <div id="footerlinks">
+        <h5>Quick Links</h5>
+        <div id="links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Events</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
+<script src="../../static/script.js"></script>
 
 </html>
