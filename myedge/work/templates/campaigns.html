@@ -141,25 +141,21 @@
     </div>
 
     <!-- contents of page -->
-
-    <div id="one" class="row">
+    {% for data in obj %}
+    <div  class="row">
       <div class="columns">
-        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h1>  {‌{ data.campaign_title }}</h1>
         <div class="camp-img">
           <img src="/images/g12.jpg" alt="Snow" style="width:100%" />
         </div>
         <div id="date">22-07-2019</div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi rem
-          repudiandae cum eos facere veniam pariatur aliquid numquam perferendis
-          veritatis, est maxime et assumenda molestias iure repellendus in autem
-          nobis minima. Suscipit eius tempore impedit quas obcaecati. Eius
-          natus, eos deserunt dolorem doloribus architecto aspernatur,
-          repellendus odit commodi beatae nulla!
+         {{data.campaign_text}}
         </p>
         <a href="#"> <button id="btns">Read More</button></a>
       </div>
     </div>
+    {% endfor %}
     <div id="two" class="row">
       <div class="columns">
         <h1>Lorem ipsum dolor sit amet.</h1>

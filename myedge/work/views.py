@@ -15,7 +15,15 @@ class AwardsPageView(TemplateView):
     template_name = "awards.html"
 
 class CampaignsPageView(TemplateView):
-    template_name = "campaigns.html"
+    template_name = "campaigns.html" 
+    def get(self,request):
+        obj=Campaign.objects.all()
+        print(">>>>>>>>>>>>>>>>>>>",obj[0].campaign_title)
+        title = map(lambda o:o.campaign_title, obj)
+        # title =['dog', 'cat','horse']
+        args={'obj':obj,'title':title}
+        return render(request,"campaigns.html" ,args)
+
 
 class ContactPageView(TemplateView):
     template_name = "contact.html"

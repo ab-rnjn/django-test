@@ -37,7 +37,7 @@ class Campaign(models.Model):
     campaign_image=models.ImageField(upload_to='media')
     #campaign_date=models.DateField(blank=True)
     campaign_text=models.TextField(default='')
-   # campaign_show=models.BooleanField(default='False')
+    campaign_show=models.BooleanField(default='False', null=True)
 
 class Upcoming_Events(models.Model):
     event_images=models.ImageField(upload_to='media')
