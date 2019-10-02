@@ -20,7 +20,6 @@ class CampaignsPageView(TemplateView):
         obj=Campaign.objects.all()
         print(">>>>>>>>>>>>>>>>>>>",obj[0].campaign_title)
         title = map(lambda o:o.campaign_title, obj)
-        # title =['dog', 'cat','horse']
         args={'obj':obj,'title':title}
         return render(request,"campaigns.html" ,args)
 
