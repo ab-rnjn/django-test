@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView # Import TemplateView
-from .models import Campaign, Upcoming_Events, Gallery
+from .models import Campaign,Upcoming_Events,News,Contact
 # Add the two views we have been talking about  all this time :)
 class HomePageView(TemplateView):
     template_name = "index.html"
-    def __index__(request):
+    def get(self,request):
         obj=Campaign.objects.all()
-        return render(request,'../../../index.html',{'obj':obj})
+        args={'obj':obj}
+        return render(request,'index.html',args)
         
 class AboutPageView(TemplateView):
     template_name = "about.html"
