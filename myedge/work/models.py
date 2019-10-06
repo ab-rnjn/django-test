@@ -42,7 +42,7 @@ class Campaign(models.Model):
 class Upcoming_Events(models.Model):
     event_images=models.ImageField(upload_to='media')
     event_title=models.CharField(max_length=100,default=None)
-    #event_date=models.DateField(default=date.today().strftime('%y-%m-%d'))
+    event_date=models.DateField(blank=True, default='', null=True)  
     event_venue=models.CharField(max_length=20)
 
 class Contact(models.Model):
