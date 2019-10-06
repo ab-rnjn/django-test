@@ -49,7 +49,7 @@
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <br />
-        <a href="/" class="hover">Home</a>
+        <a href="#" class="hover">Home</a>
         <a href="/about" class="hover">About Us</a>
         <a href="/events" class="hover">Events</a>
         <a href="/campaigns" class="hover">Campaigns</a>
@@ -298,17 +298,21 @@
           <p>Upcoming<span>Events</span></p>
         </div>
         <div class="upcoming-events">
+            {% for data in obj %}
+
           <div class="event">
             <div class="event-img">
-              <img src="/images/g15.jpg" alt="child" style="width: 100%" />
+              <img src="/images/{{data.event_images}}" alt="child" style="width: 100%" />
             </div>
-            <h5>Helping the church to serve others</h5>
+            <h5>{{data.event_title}}</h5>
             <div id="date" class="date">
               <div class="date" id="time">24-july-2019</div>
-              <div class="date" id="location">Bhopal MP</div>
+              <div class="date" id="location">{{data.event_venue}}</div>
             </div>
           </div>
-          <div class="event">
+          {% endfor %}
+
+          <!-- <div class="event">
             <div class="event-img">
               <img src="/images/g2.jpg" alt="child" style="width: 100%" />
             </div>
@@ -338,7 +342,7 @@
               <div class="date" id="location">New Delhi</div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 

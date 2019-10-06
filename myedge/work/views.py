@@ -1,13 +1,15 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView # Import TemplateView
-from .models import Campaign,Upcoming_Events,News,Contact
+from .models import Campaign,Upcoming_Events,News,Contact, Gallery
 # Add the two views we have been talking about  all this time :)
 class HomePageView(TemplateView):
     template_name = "index.html"
     def get(self,request):
-        obj=Campaign.objects.all()
+        obj=Upcoming_Events.objects.all()
+        # print(">>>>>>>>>>>>>>>>>>>",obj[0].campaign_title)
+        # title = map(lambda o:o.campaign_title, obj)
         args={'obj':obj}
-        return render(request,'index.html',args)
+        return render(request,self.template_name ,args)
         
 class AboutPageView(TemplateView):
     template_name = "about.html"
@@ -21,14 +23,26 @@ class CampaignsPageView(TemplateView):
         print(">>>>>>>>>>>>>>>>>>>",obj[0].campaign_title)
         title = map(lambda o:o.campaign_title, obj)
         args={'obj':obj,'title':title}
-        return render(request,"campaigns.html" ,args)
-
+        return render(request,self.template_name ,args)
 
 class ContactPageView(TemplateView):
     template_name = "contact.html"
+    def get(self,request):
+        obj=Campaign.objects.all()
+        # print(">>>>>>>>>>>>>>>>>>>",obj[0].campaign_title)
+        # title = map(lambda o:o.campaign_title, obj)
+        args={'obj':obj}
+        return render(request,self.template_name ,args)
 
 class GallaryPageView(TemplateView):
     template_name = "gallary.html"
+    def get(self,request):
+        obj= Gallery.objects.all()
+        # print(">>>>>>>>>>>>>>>>>>>",obj[0].campaign_title)
+        # title = map(lambda o:o.campaign_title, obj)
+        args={'obj':obj}
+        return render(request,self.template_name ,args)
+
 
 class HistoryPageView(TemplateView):
     template_name = "history.html"
@@ -38,6 +52,13 @@ class MissionPageView(TemplateView):
 
 class NewsPageView(TemplateView):
     template_name = "news.html"
+    def get(self,request):
+        obj=News.objects.all()
+        # print(">>>>>>>>>>>>>>>>>>>",obj[0].campaign_title)
+        # title = map(lambda o:o.campaign_title, obj)
+        args={'obj':obj}
+        return render(request,self.template_name ,args)
+
 
 class VideosPageView(TemplateView):
     template_name = "videos.html"
